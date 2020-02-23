@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title> Let's learn a language with stories. </title>
-	</head>
-	<body>
-		<p> We're using machine learning and AI to build stories around words that you input, and we're translating those words so you can learn. </p>
-		<input type = "text" id = "word1" value = "Type in a word you want to learn" />
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1><center>Welcome</center></h1>
+    <script src="script.js"></script>
+    <p><center> We're using machine learning and AI to build stories around words that you input, and we're translating those words so you can learn. </p></center>
+    <form>
+  		<input type = "text" id = "word1" value = "Type in a word you want to learn" />
+      <br><br>
+      <input type = "text" id = "word2" value = "Type in another word you want to learn" />
+      <br><br>
+      <input type = "text" id = "word3" value = "Type in a third word you want to learn" />
+      <br><br>
+      <button type="submit" form="nameform" value="Submit" onclick="getInput()">Submit</button>
+    </form>
+  </body>
 </html>
