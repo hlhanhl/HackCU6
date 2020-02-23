@@ -96,13 +96,15 @@ class ngram:
         return chosen_word
             
     
-a=ngram(['Philippine','think','this'])
-a.train()
-c=0
-text=[]
-while(a.cur_index < a.listlength):
-    s=a.generate()
-    text.append(s)
-    if (c>3):
-        break
-    c+=1
+
+def generatetext(words):
+    a=ngram(words)
+    a.train()
+    c=0
+    text=[]
+    while(a.cur_index < a.listlength):
+        s=a.generate()
+        text.append(s)
+        if (c>4):
+            break
+        c+=1
