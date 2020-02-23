@@ -110,7 +110,7 @@ def generatetext(words):
         c+=1
 
 def translations(words):
-    lines=[line.strip() for line in open('Manchu.txt')]
+    lines=[line.strip() for line in open('indonesian.txt')]
     eng=[]
     man=[]
     translated=[]
@@ -123,4 +123,6 @@ def translations(words):
         if w not in eng:
             i=0
         translated.append(man[i])
-        return translated
+    print(translated)
+    return translated
+translations(['I','love','you'])
