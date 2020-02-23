@@ -108,3 +108,19 @@ def generatetext(words):
         if (c>4):
             break
         c+=1
+
+def translations(words):
+    lines=[line.strip() for line in open('Manchu.txt')]
+    eng=[]
+    man=[]
+    translated=[]
+    for line in lines:
+        a,b=line.split()
+        eng.append(a)
+        man.append(b)
+    for w in words:
+        i=eng.index(w)
+        if w not in eng:
+            i=0
+        translated.append(man[i])
+        return translated
